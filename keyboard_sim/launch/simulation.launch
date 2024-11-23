@@ -1,0 +1,10 @@
+<launch>
+    <!-- Start keyboard graph builder node -->
+    <node pkg="keyboard_sim" type="keyboard_graph_builder.py" name="keyboard_graph_builder" output="screen" />
+
+    <!-- Start path planner node -->
+    <node pkg="keyboard_sim" type="path_planner.py" name="path_planner" output="screen" />
+
+    <!-- Start robot controller node -->
+    <node pkg="keyboard_sim" type="robot_controller.py" name="robot_controller" output="screen" />
+</launch>
